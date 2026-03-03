@@ -1,0 +1,541 @@
+export const products = [
+  {
+    id: 1,
+    name: "Soda Ash",
+    slug: "soda-ash",
+    category: "Textile/Detergent Chemicals",
+    shortDescription:
+      "Used extensively in detergent manufacture and textile processing.",
+    image: "/images/soda_ash.png",
+    sections: {
+      availableGrade: "Industrial Grade CAS Number 497-19-8",
+      application:
+        "Primary builder in detergent manufacturing, water softening, and pH control in industrial processes.",
+      packing: "50kg PP Woven bags with inner liner.",
+      qualityAssurance:
+        "COA and MSDS available for every batch. 99% minimum purity.",
+    },
+  },
+  {
+    id: 2,
+    name: "Sodium Bi Carbonate",
+    slug: "sodium-bi-carbonate",
+    category: "Food Chemicals",
+    shortDescription:
+      "Essential foaming and neutralization agent for food and industrial use.",
+    image: "/images/sodium_bicarbonate.png",
+    sections: {
+      availableGrade: "Food Grade / Technical Grade",
+      application:
+        "Baking industry, fire extinguishers, and dye-fixing in textile industries.",
+      packing: "25kg PP Woven bags with inner liner.",
+      qualityAssurance: "HACCP certified for food grade. COA provided.",
+    },
+  },
+  {
+    id: 3,
+    name: "Caustic Soda",
+    slug: "caustic-soda",
+    category: "Textile/Detergent Chemicals",
+    shortDescription:
+      "Strong alkaline chemical for cleaning and chemical processing.",
+    image: "/images/caustic_acid.png",
+    sections: {
+      availableGrade: "Rayon Grade (99%) / Industrial Grade (96%)",
+      application:
+        "Soap manufacturing, textile mercerization, and water treatment.",
+      packing: "25kg PP Woven bags with inner liner.",
+      qualityAssurance:
+        "Tested for iron content and purity. MSDS mandatory during transport.",
+    },
+  },
+  {
+    id: 4,
+    name: "Caustic Liquid",
+    slug: "caustic-liquid",
+    category: "Textile/Detergent Chemicals",
+    shortDescription:
+      "Pre-dissolved caustic soda for easier industrial handling.",
+    image: "/images/caustic_liquid.png",
+    sections: {
+      availableGrade: "33% / 50% Concentration",
+      application: "Large scale industrial cleaning and chemical reactions.",
+      packing: "Drums or Tankers.",
+      qualityAssurance:
+        "Concentration verification via titration for every delivery.",
+    },
+  },
+  {
+    id: 5,
+    name: "Starch",
+    slug: "starch",
+    category: "Food Chemicals",
+    shortDescription:
+      "Natural thickening and sizing agent for food and textiles.",
+    image: "/images/starch_poweder.png",
+    sections: {
+      availableGrade: "Food Grade (Maize/Wheat) / Industrial Grade",
+      application: "Fabric sizing, food thickener, and paper industry.",
+      packing: "25kg / 50kg PP Woven bags with inner liner.",
+      qualityAssurance: "Viscosity and moisture control testing.",
+    },
+  },
+  {
+    id: 6,
+    name: "Hydrogen Peroxide",
+    slug: "hydrogen-peroxide",
+    category: "Textile/Detergent Chemicals",
+    shortDescription:
+      "Powerful bleaching agent used in textile and paper industries.",
+    image: "/images/hydrogen.png",
+    sections: {
+      availableGrade: "35% / 50% Hydrogen Peroxide",
+      application:
+        "Bleaching of cotton and synthetic fibers, environmental treatment.",
+      packing: "30kg / 50kg Carboys.",
+      qualityAssurance: "Stability testing and concentration analysis.",
+    },
+  },
+  {
+    id: 7,
+    name: "Sulphionic Acid",
+    slug: "sulphionic-acid",
+    category: "Textile/Detergent Chemicals",
+    shortDescription:
+      "Key active ingredient for high-performance detergents (LABSA).",
+    image: "/images/sulphinoic_acid.png",
+    sections: {
+      availableGrade: "90% / 96% Active Matter",
+      application:
+        "Liquid detergents, washing powders, and industrial cleaners.",
+      packing: "215kg / 224kg Plastic Drums.",
+      qualityAssurance: "Acid value and active matter verification.",
+    },
+  },
+  {
+    id: 8,
+    name: "Sodium Lauryl Ether Sulfate",
+    slug: "sles",
+    category: "Textile/Detergent Chemicals",
+    shortDescription:
+      "Sodium Lauryl Ether Sulfate - excellent foaming and cleaning agent.",
+    image: "/images/SLES.png",
+    sections: {
+      availableGrade: "70% Paste / 28% Liquid",
+      application: "Shampoo, bubble bath, and dishwashing liquids.",
+      packing: "170kg / 220kg Drums.",
+      qualityAssurance: "Viscosity and 1,4-Dioxane limits meeting standards.",
+    },
+  },
+  {
+    id: 9,
+    name: "SLS",
+    slug: "sls",
+    category: "Textile/Detergent Chemicals",
+    shortDescription:
+      "Sodium Lauryl Sulfate - versatile surfactant for cleansing products.",
+    image: "/images/sls_powder.png",
+    sections: {
+      availableGrade: "Needles / Powder Form",
+      application: "Toothpaste, cream, and industrial scouring agents.",
+      packing: "20kg / 25kg bags.",
+      qualityAssurance: "Purity and color index testing.",
+    },
+  },
+  {
+    id: 10,
+    name: "Xylene",
+    slug: "xylene",
+    category: "Solvents",
+    shortDescription:
+      "Industrial solvent for coatings, paints, and chemical synthesis.",
+    image: "/images/Xylene.png",
+    sections: {
+      availableGrade: "Pure Grade",
+      application: "Solvent for thinners and laboratory use.",
+      packing: "180kg Drums.",
+      qualityAssurance: "Specific gravity and distillation range analysis.",
+    },
+  },
+  {
+    id: 11,
+    name: "Butyle",
+    slug: "butyle",
+    category: "Solvents",
+    shortDescription:
+      "Butyl Acetate/Cellosolve - high-performance industrial solvent.",
+    image: "/images/butyl.png",
+    sections: {
+      availableGrade: "Technical Grade",
+      application: "Paint industry and chemical intermediate.",
+      packing: "180kg Drums.",
+      qualityAssurance: "Moisture and purity testing.",
+    },
+  },
+  {
+    id: 12,
+    name: "Cyclohexanone",
+    slug: "cyclohexanone",
+    category: "Solvents",
+    shortDescription:
+      "Specialized solvent for resins, plastics, and pesticides.",
+    image: "/images/cyclohexanone.png",
+    sections: {
+      availableGrade: "99.8% Purity",
+      application: "Vinyl resin solvent and production of nylon intermediates.",
+      packing: "190kg Drums.",
+      qualityAssurance: "Refractive index and color analysis.",
+    },
+  },
+  {
+    id: 13,
+    name: "TriSodium Phosphate (TSP)",
+    slug: "tri-sodium",
+    category: "Additives",
+    shortDescription:
+      "Trisodium Phosphate (TSP) - effective cleaning and buffering agent.",
+    image: "/images/tsp.png",
+    sections: {
+      availableGrade: "Anhydrous / Crystalline",
+      application: "Cleaning agent, lubricant additive, and food additive.",
+      packing: "25kg bags.",
+      qualityAssurance: "Water solubility and P2O5 content verification.",
+    },
+  },
+  {
+    id: 14,
+    name: "Sodium Hexamethaphostate",
+    slug: "sodium-hexamethaphostate",
+    category: "Additives",
+    shortDescription:
+      "SHMP - sequestration agent for water treatment and food.",
+    image: "/images/shmp.png",
+    sections: {
+      availableGrade: "Food Grade / Tech Grade",
+      application:
+        "Textile processing, water softening, and food preservation.",
+      packing: "25kg bags.",
+      qualityAssurance: "Total phosphate and pH value testing.",
+    },
+  },
+  {
+    id: 15,
+    name: "Sodium Tripolyphosphate (STPP)",
+    slug: "stpp",
+    category: "Textile/Detergent Chemicals",
+    shortDescription:
+      "Sodium Tripolyphosphate - powerful builder in washing powders.",
+    image: "/images/stpp.png",
+    sections: {
+      availableGrade: "Industrial Grade",
+      application:
+        "Main ingredient in automatic dishwashing and powder detergents.",
+      packing: "25kg bags.",
+      qualityAssurance: "Sequestration power and mesh size analysis.",
+    },
+  },
+  {
+    id: 16,
+    name: "Color speckles",
+    slug: "color-speckles",
+    category: "Additives",
+    shortDescription:
+      "Visual enhancers for detergent powders available in various colors.",
+    image: "/images/color_spackles.png",
+    sections: {
+      availableGrade: "Bentonite / Soda Ash based",
+      application: "Visual aesthetics in washing powder.",
+      packing: "25kg bags.",
+      qualityAssurance: "Color stability and solubility in water.",
+    },
+  },
+  {
+    id: 17,
+    name: "Surf Noodles",
+    slug: "surf-noodles",
+    category: "Additives",
+    shortDescription: "Functional additives for texture and efficacy in soaps.",
+    image: "/images/surf.png",
+    sections: {
+      availableGrade: "Standard Grade",
+      application: "Used as a filler and texture enhancer in detergent cakes.",
+      packing: "25kg / 50kg bags.",
+      qualityAssurance: "Total Fatty Matter (TFM) check.",
+    },
+  },
+  {
+    id: 18,
+    name: "Colors",
+    slug: "colors",
+    category: "Additives",
+    shortDescription: "Industrial and food grade pigments and dyes.",
+    image: "/images/colors.png",
+    sections: {
+      availableGrade: "Industrial / Food Grade",
+      application: "Coloring for detergents, textiles, and food products.",
+      packing: "1kg / 5kg / 25kg containers.",
+      qualityAssurance: "Lightfastness and non-toxicity certification.",
+    },
+  },
+  {
+    id: 19,
+    name: "Fragrances",
+    slug: "fragrances",
+    category: "Additives",
+    shortDescription:
+      "Premium industrial fragrances for household and personal care.",
+    image: "/images/fragnance.png",
+    sections: {
+      availableGrade: "Synthetic / Natural Essential Oils",
+      application: "Scenting detergents, soaps, and air fresheners.",
+      packing: "5kg / 25kg Aluminum or Plastic drums.",
+      qualityAssurance: "Scent profile consistency and shelf-life testing.",
+      fragranceType: "Ariel, Excel, Bonous, bright, lemon max, Lux, Safegaurd, Capri, T.Rose, Lavender, Jasmine, Powder Perfumes, etc.",
+    },
+  },
+  {
+    id: 20,
+    name: "Flavors",
+    slug: "flavors",
+    category: "Food Chemicals",
+    shortDescription: "Concentrated flavoring agents for the food industry.",
+    image: "/images/flavors.png",
+    sections: {
+      availableGrade: "Food Grade",
+      application: "Bakery, confectionery, and beverage industries.",
+      packing: "1kg / 5kg containers.",
+      qualityAssurance: "Food safe certified (FSC/HACCP).",
+      flavorType: "Candy, Bubble Gum, Biscuits, Seasoning, Chicken, Potato, Juice, etc.",
+    },
+  },
+  {
+    id: 21,
+    name: "Seasoning Spices",
+    slug: "seasoning-spices",
+    category: "Food Chemicals",
+    shortDescription: "High-quality spice blends for food processing.",
+    image: "/images/ss.png",
+    sections: {
+      availableGrade: "Culinaries Grade",
+      application: "Snack seasoning and industrial food processing.",
+      packing: "25kg Bulk Bags and Drums.",
+      qualityAssurance: "Microbial testing and flavor intensity check.",
+    },
+  },
+  {
+    id: 22,
+    name: "Glucose",
+    slug: "glucose",
+    category: "Food Chemicals",
+    shortDescription: "Liquid and powder glucose for sweetening and texture.",
+    image: "/images/glusoce.png",
+    sections: {
+      availableGrade: "Food Grade Liquid / Powder",
+      application: "Confectionery, baking, and pharmaceutical industry.",
+      packing: "300kg Drums / 25kg Bags.",
+      qualityAssurance: "DE (Dextrose Equivalent) value verification.",
+    },
+  },
+  {
+    id: 23,
+    name: "Sodium Sulphate",
+    slug: "sodium-sulphate",
+    category: "Textile/Detergent Chemicals",
+    shortDescription:
+      "Inert filler and levelling agent for detergents and textiles.",
+    image: "/images/sodium_suphafe.png",
+    sections: {
+      availableGrade: "Anhydrous 99%",
+      application: "Detergent filler, glass industry, and textile dyeing.",
+      packing: "50kg bags.",
+      qualityAssurance: "Iron content and moisture analysis.",
+    },
+  },
+  {
+    id: 24,
+    name: "Nansa",
+    slug: "nansa",
+    category: "Textile/Detergent Chemicals",
+    shortDescription: "Specialized surfactant for high-performance cleaning.",
+    image: "/images/nansa.png",
+    sections: {
+      availableGrade: "Industrial Grade",
+      application: "Emulsifier and wetting agent in industrial cleaners.",
+      packing: "12kg bags.",
+      qualityAssurance: "Wetting power and foam stability test.",
+    },
+  },
+  {
+    id: 25,
+    name: "Surf Base",
+    slug: "surf-base",
+    category: "Textile/Detergent Chemicals",
+    shortDescription: "Ready-to-use base for detergent formulation.",
+    image: "/images/sirfbase.png",
+    sections: {
+      availableGrade: "Concentrated Base",
+      application: "Small scale detergent manufacturing.",
+      packing: "50kg Bags.",
+      qualityAssurance: "Active matter consistency.",
+    },
+  },
+  {
+    id: 26,
+    name: "Talcum Powder",
+    slug: "talcum-powder",
+    category: "Additives",
+    shortDescription:
+      "Fine powder for coatings, cosmetics, and industrial use.",
+    image: "/images/tp.png",
+    sections: {
+      availableGrade: "Super Fine Industrial Grade",
+      application: "Fillers in plastics, paint, and paper industry.",
+      packing: "25kg bags.",
+      qualityAssurance: "Mesh size and whiteness index testing.",
+    },
+  },
+  {
+    id: 27,
+    name: "Calcium Powder",
+    slug: "calcium-powder",
+    category: "Additives",
+    shortDescription:
+      "Calcium Carbonate - essential filler for construction and plastics.",
+    image: "/images/cp.png",
+    sections: {
+      availableGrade: "GCC / PCC Grade",
+      application: "Paints, rubber, and detergent builder.",
+      packing: "50kg bags.",
+      qualityAssurance: "Calcium content and particle size check.",
+    },
+  },
+  {
+    id: 28,
+    name: "NP 9",
+    slug: "np-9",
+    category: "Textile/Detergent Chemicals",
+    shortDescription:
+      "Nonylphenol Ethoxylate - versatile non-ionic surfactant.",
+    image: "/images/np9.png",
+    sections: {
+      availableGrade: "Technical Grade",
+      application: "Industrial laundering, emulsification, and wetting.",
+      packing: "200kg Drums.",
+      qualityAssurance: "Cloud point and hydroxyl value analysis.",
+    },
+  },
+  {
+    id: 29,
+    name: "Multani Mitti",
+    slug: "multani-mitti",
+    category: "Additives",
+    shortDescription:
+      "Fuller's Earth - natural adsorbent for many industrial uses.",
+    image: "/images/mm.png",
+    sections: {
+      availableGrade: "Raw / Powdered",
+      application: "Oil refining, cosmetic base, and adsorbent.",
+      packing: "25kg Bags.",
+      qualityAssurance: "Adsorption capacity and purity check.",
+    },
+  },
+  {
+    id: 30,
+    name: "Oxalic Acid",
+    slug: "oxalic-acid",
+    category: "Textile/Detergent Chemicals",
+    shortDescription: "Effective rust remover and bleaching agent.",
+    image: "/images/oa.png",
+    sections: {
+      availableGrade: "99.6% Purity",
+      application: "Metal cleaning, textile bleaching, and wood polishing.",
+      packing: "25kg Bags.",
+      qualityAssurance: "Purity and ash content testing.",
+    },
+  },
+  {
+    id: 31,
+    name: "PVA",
+    slug: "pva",
+    category: "Textile/Detergent Chemicals",
+    shortDescription: "Polyvinyl Alcohol - water soluble synthetic polymer.",
+    image: "/images/pva.png",
+    sections: {
+      availableGrade: "Fully Hydrolyzed / Partially Hydrolyzed",
+      application: "Textile sizing, adhesive production, and paper coating.",
+      packing: "20kg / 25kg Bags.",
+      qualityAssurance: "Saponification value and viscosity test.",
+    },
+  },
+  {
+    id: 32,
+    name: "Kerosene Oil",
+    slug: "kerosene-oil",
+    category: "Solvents",
+    shortDescription: "Industrial grade kerosene for fuel and solvent use.",
+    image: "/images/kerosene.png",
+    sections: {
+      availableGrade: "Industrial / Technical",
+      application: "Degreasing, fuel, and specialized solvent.",
+      packing: "180kg Drums.",
+      qualityAssurance: "Flash point and distillation range compliance.",
+    },
+  },
+  {
+    id: 33,
+    name: "White Oil",
+    slug: "white-oil",
+    category: "Additives",
+    shortDescription:
+      "Liquid paraffin - highly refined mineral oil for industries.",
+    image: "/images/whiteoil.png",
+    sections: {
+      availableGrade: "Pharma / Tech Grade",
+      application: "Plasticizer, textile auxiliary, and cosmetic formulations.",
+      packing: "170kg / 200kg Drums.",
+      qualityAssurance: "Odorless and colorless verification (ASTM standards).",
+    },
+  },
+  {
+    id: 34,
+    name: "Borex Powder",
+    slug: "borex-powder",
+    category: "Additives",
+    shortDescription: "Essential industrial mineral for cleaning and metallurgical flux.",
+    image: "/images/borex.png",
+    sections: {
+      availableGrade: "Technical / Industrial Grade",
+      application: "Used in detergent enhancement, metallurgy, and wood preservation.",
+      packing: "25kg bags.",
+      qualityAssurance: "Purity and mesh size tested for industrial standards.",
+    },
+  },
+  {
+    id: 35,
+    name: "Chicken Powder",
+    slug: "chicken-powder",
+    category: "Food Chemicals",
+    shortDescription: "Premium seasoning for enhancing flavor in food processing and culinary use.",
+    image: "/images/chickenp.png",
+    sections: {
+      availableGrade: "Food Grade",
+      application: "Used in seasonings, soups, sauces, and industrial food manufacturing.",
+      packing: "1kg / 5kg / 25kg bags.",
+      qualityAssurance: "HACCP and Food Safety certified. Consistent flavor profile.",
+    },
+  },
+  {
+    id: 36,
+    name: "Potato Powder",
+    slug: "potato-powder",
+    category: "Food Chemicals",
+    shortDescription: "High-quality dehydrated potato powder for food manufacturing and snacks.",
+    image: "/images/potatop.png",
+    sections: {
+      availableGrade: "Food Grade",
+      application: "Used as a thickening agent in soups, sauces, and snack food manufacturing.",
+      packing: "25kg bags.",
+      qualityAssurance: "COA and Food Safety certification. Strict moisture control.",
+    },
+  },
+];
